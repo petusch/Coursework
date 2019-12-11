@@ -10,8 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.course_work.R
+import com.example.course_work.ui.Allotment.*
 import com.example.course_work.ui.CommonActivity
-import com.example.course_work.ui.LogIn.ui.login.LoginActivity
+
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment() {
@@ -30,9 +31,19 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        LogInbutton.setOnClickListener{
-            val intent = Intent(context, LoginActivity::class.java)
-            // start your next activity
-            startActivity(intent)    }
+        text_notifications1.setOnClickListener{
+            val intent = Intent(context, FirstActivity::class.java)
+            startActivity(intent)
+                }
+
+        text_notifications2.setOnClickListener{
+            val intent = Intent(context, SecondActivity::class.java)
+            startActivity(intent)
+        }
+
+        text_notifications3.setOnClickListener{
+            val intent = Intent(context, ThirdActivity::class.java)
+            startActivity(intent)
+        }
         }
     }
