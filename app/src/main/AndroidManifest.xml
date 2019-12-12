@@ -9,11 +9,78 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.Allotment.ThirdActivity"></activity>
+        <activity
+            android:name=".ui.Doctors.DietActivity"
+            android:label="@string/title_activity_diet"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.NeuroActivity"
+            android:label="@string/title_activity_neuro"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.DentistActivity"
+            android:label="@string/title_activity_dentist"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.PsychoActivity"
+            android:label="@string/title_activity_psycho"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.OnkologistActivity"
+            android:label="@string/title_activity_onkologist"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.OculusActivity"
+            android:label="@string/title_activity_oculus"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.CardioActivity"
+            android:label="@string/title_activity_cardio"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ui.Doctors.LORActivity"
+            android:label="@string/title_activity_lor"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.Allotment.ThirdActivity" />
         <activity android:name=".ui.Allotment.SecondActivity" />
         <activity android:name=".ui.Allotment.FirstActivity" />
         <activity
-            android:name=".ui.CommonActivity"
+            android:name=".ui.Doctors.CommonActivity"
             android:label="@string/title_activity_common"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">

@@ -5,15 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 
-import androidx.lifecycle.ViewModelProviders
 import com.example.course_work.R
-import com.example.course_work.ui.CommonActivity
+import com.example.course_work.ui.Doctors.*
 import kotlinx.android.synthetic.main.fragment_dashboard.*
 
 class DashboardFragment : Fragment() {
@@ -40,6 +35,38 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         text_notifications1.setOnClickListener{
             val intent = Intent(context, CommonActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications2.setOnClickListener{
+            val intent = Intent(context, LORActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications3.setOnClickListener{
+            val intent = Intent(context, OculusActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications4.setOnClickListener{
+            val intent = Intent(context, OnkologistActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications5.setOnClickListener{
+            val intent = Intent(context, PsychoActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications6.setOnClickListener{
+            val intent = Intent(context, DentistActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications7.setOnClickListener{
+            val intent = Intent(context, CardioActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications8.setOnClickListener{
+            val intent = Intent(context, NeuroActivity::class.java)
+            // start your next activity
+            startActivity(intent)    }
+        text_notifications9.setOnClickListener{
+            val intent = Intent(context, DietActivity::class.java)
             // start your next activity
             startActivity(intent)    }
 }}

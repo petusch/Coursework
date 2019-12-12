@@ -1,4 +1,4 @@
-package com.example.course_work.ui
+package com.example.course_work.ui.Doctors
 
 import android.os.Bundle
 import com.google.android.material.snackbar.Snackbar
@@ -12,10 +12,6 @@ class CommonActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_common)
         setSupportActionBar(toolbar)
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 }
