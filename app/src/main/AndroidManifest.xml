@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.TicketActivities.TimeActivity"></activity>
+        <activity
+            android:name=".ui.Doctors.LORActivity"
+            android:label="@string/title_activity_lor"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.course_work.MainActivity" />
+        </activity>
+        <activity android:name=".ui.TicketActivities.TimeActivity" />
         <activity android:name=".ui.TicketActivities.DateActivity" />
         <activity
             android:name=".ui.Doctors.DietActivity"
@@ -74,10 +83,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.course_work.MainActivity" />
         </activity>
-        <activity
-            android:name=".ui.Doctors.LORActivity"
-            android:label="@string/title_activity_lor"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.Allotment.ThirdActivity" />
         <activity android:name=".ui.Allotment.SecondActivity" />
         <activity android:name=".ui.Allotment.FirstActivity" />
