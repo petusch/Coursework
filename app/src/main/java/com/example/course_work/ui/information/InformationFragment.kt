@@ -1,4 +1,4 @@
-package com.example.course_work.ui.notifications
+package com.example.course_work.ui.information
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,26 +10,26 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.course_work.R
 
-class NotificationsFragment : Fragment() {
+class InformationFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
-    private lateinit var notificationsViewModel2: NotificationsViewModel2
+    private lateinit var informationViewModel: InformationViewModel
+    private lateinit var informationViewModel2: InformationViewModel2
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
+        informationViewModel =
+                ViewModelProviders.of(this).get(InformationViewModel::class.java)
+        informationViewModel2 =
+            ViewModelProviders.of(this).get(InformationViewModel2::class.java)
+        val root = inflater.inflate(R.layout.fragment_information, container, false)
         val textView: TextView = root.findViewById(R.id.text_notifications)
         val textView2: TextView = root.findViewById(R.id.textView)
-        notificationsViewModel.text.observe(this, Observer {
+        informationViewModel.text.observe(this, Observer {
             textView.text = it
         })
-        notificationsViewModel2 =
-            ViewModelProviders.of(this).get(NotificationsViewModel2::class.java)
-        notificationsViewModel2.text.observe(this, Observer {
+        informationViewModel2.text.observe(this, Observer {
             textView2.text = it
         })
         return root

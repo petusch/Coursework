@@ -13,6 +13,5 @@ class LORActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lor)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
     }
 }

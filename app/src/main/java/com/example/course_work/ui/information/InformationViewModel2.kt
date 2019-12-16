@@ -1,10 +1,10 @@
-package com.example.course_work.ui.notifications
+package com.example.course_work.ui.information
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel2 : ViewModel() {
+class InformationViewModel2 : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = " Адрес: \n\t270003, город Орша, улица Пушкина,\n\tдом Колотушкина \n" +
